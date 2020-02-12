@@ -3,14 +3,14 @@ import classes from './Layout.module.css';
 console.log(classes);
 
 const Layout = ({ children }) => (
-  <>
-    <div>
-      Toolbar, SideDrawer, Backdrop
-    </div>
-    <main className={classes["Content"]}>
-        {children}
-    </main>
-  </>
+    <>
+        <div>
+          Toolbar, SideDrawer, Backdrop
+        </div>
+        <main className={classes["Content"]}>
+            {children}
+        </main>
+    </>
 );
 
 export default Layout;

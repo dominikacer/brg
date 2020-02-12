@@ -1,11 +1,13 @@
 import React from 'react';
+import classes from './Layout.module.css';
+console.log(classes);
 
 const Layout = ({ children }) => (
   <>
     <div>
       Toolbar, SideDrawer, Backdrop
     </div>
-    <main>
+    <main className={classes["Content"]}>
         {children}
     </main>
   </>

@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './Layout.module.css';
-console.log(classes);
 
 const Layout = ({ children }) => (
     <>

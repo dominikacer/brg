@@ -25,7 +25,7 @@ const toFixedHelper = (num, digits) => {
   return num.toFixed(digits);
 };
 
-const BuildControls = ({ addIngredient, removeIngredient, disabled, price, purchasable }) => (
+const BuildControls = ({ addIngredient, removeIngredient, disabled, price, purchasable, ordered }) => (
     <div className={classes["BuildControls"]}>
         <p>Current price = <strong>{toFixedHelper(price, 2)}</strong></p>
         {controls.map(ctrl => (
@@ -40,6 +40,7 @@ const BuildControls = ({ addIngredient, removeIngredient, disabled, price, purch
         <button
             className={classes["OrderButton"]}
             disabled={!purchasable}
+            onClick={ordered}
         >
             ORDER NOW
         </button>
